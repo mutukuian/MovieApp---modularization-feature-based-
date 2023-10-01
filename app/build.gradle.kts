@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -51,6 +53,10 @@ android {
 
 dependencies {
 
+    implementation(project(":feature:movie:ui"))
+    implementation(project(":core:feature_api"))
+    implementation(project(":core:common"))
+
     implementation  (Deps.core)
     implementation (CoroutinesLifecycleScope.lifeCycleRuntime)
     implementation(JetpackCompose.composeActivity)
@@ -69,4 +75,9 @@ dependencies {
     androidTestImplementation(ComposeAndroidTestImplementation.composeUiTest)
     debugImplementation(ComposeDebugImplementation.toolingUi)
     debugImplementation(ComposeDebugImplementation.manifestTest)
+
+    implementation (DaggerHilt.hilt)
+    kapt (DaggerHilt.hiltCompiler)
+
+    implementation(JetpackCompose.navigation)
 }
