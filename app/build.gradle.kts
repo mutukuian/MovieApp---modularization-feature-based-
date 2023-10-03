@@ -54,6 +54,8 @@ android {
 dependencies {
 
     implementation(project(":feature:movie:ui"))
+    implementation(project(":feature:movie:domain"))
+    implementation(project(":feature:movie:data"))
     implementation(project(":core:feature_api"))
     implementation(project(":core:common"))
 
