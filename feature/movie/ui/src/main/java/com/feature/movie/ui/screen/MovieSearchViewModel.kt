@@ -31,7 +31,7 @@ class MovieSearchViewModel @Inject constructor(
         _query.value = s
     }
 
-    val API_KEY = ""
+    val API_KEY = "d48dbbc8b70327df2e30768aa16ef1c9"
     init {
         viewModelScope.launch {
             _query.debounce(1000).collectLatest {

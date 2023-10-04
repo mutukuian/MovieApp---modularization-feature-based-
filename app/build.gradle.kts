@@ -67,6 +67,7 @@ dependencies {
 //    implementation("androidx.compose.ui:ui-graphics")
     implementation(JetpackCompose.composeUiToolingPreview)
     implementation(JetpackCompose.composeMaterial)
+    implementation("androidx.compose.material3:material3:1.1.2")
 
 
     testImplementation(TestImplementation.junit)
