@@ -54,6 +54,8 @@ android {
 dependencies {
 
     implementation(project(":feature:movie:ui"))
+    implementation(project(":feature:movie:domain"))
+    implementation(project(":feature:movie:data"))
     implementation(project(":core:feature_api"))
     implementation(project(":core:common"))
 
@@ -65,6 +67,7 @@ dependencies {
 //    implementation("androidx.compose.ui:ui-graphics")
     implementation(JetpackCompose.composeUiToolingPreview)
     implementation(JetpackCompose.composeMaterial)
+    implementation("androidx.compose.material3:material3:1.1.2")
 
 
     testImplementation(TestImplementation.junit)
