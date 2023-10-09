@@ -50,7 +50,7 @@ dependencies {
 
     implementation(project(":core:feature_api"))
     implementation(project(":core:common"))
-    implementation(project(":feature:movie:domain"))
+    implementation(project(":feature:movie_details:domain"))
 
     implementation  (Deps.core)
     implementation (CoroutinesLifecycleScope.lifeCycleRuntime)

@@ -56,6 +56,12 @@ dependencies {
     implementation(project(":feature:movie:ui"))
     implementation(project(":feature:movie:domain"))
     implementation(project(":feature:movie:data"))
+
+    implementation(project(":feature:movie_details:ui"))
+    implementation(project(":feature:movie_details:domain"))
+    implementation(project(":feature:movie_details:data"))
+
+
     implementation(project(":core:feature_api"))
     implementation(project(":core:common"))
 

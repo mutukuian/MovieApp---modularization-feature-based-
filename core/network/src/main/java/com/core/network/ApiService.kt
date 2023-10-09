@@ -19,7 +19,7 @@ interface ApiService {
 
     //details
 //    https://api.themoviedb.org/3/movie/767?api_key=d48dbbc8b70327df2e30768aa16ef1c9
-    @GET("movie/{id}")
+    @GET("3/movie/{id}")
     suspend fun getMovieDetails(
         @Path("id") id:String,
         @Query("api_key") apiKey: String
